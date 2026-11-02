@@ -1,0 +1,9 @@
+streamlit>=1.45   # segmented control, dataframe row_height
+pandas>=2.2
+numpy>=1.26
+plotly>=5.24
+networkx>=3.3
+matplotlib>=3.7  # only needed for experiments/run_batch.py plots
+
+# Optional: Google Gemini provider (the app runs without it)
+google-genai>=1.51   # tested with 2.34; imported only when Gemini is selected
