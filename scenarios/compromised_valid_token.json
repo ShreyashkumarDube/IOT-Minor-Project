@@ -1,0 +1,90 @@
+{
+  "name": "compromised_valid_token",
+  "description": "The smart meter has a valid secret (ZK always passes) but moves laterally, probes sensitive targets and exfiltrates from t=40.",
+  "seed": 42,
+  "ticks_suggested": 160,
+  "devices": [
+    {
+      "default": "DEV-001"
+    },
+    {
+      "default": "DEV-002"
+    },
+    {
+      "default": "DEV-003"
+    },
+    {
+      "default": "DEV-004"
+    },
+    {
+      "catalog": "smart_lock",
+      "id": "DEV-006"
+    },
+    {
+      "catalog": "smart_thermostat",
+      "id": "DEV-007"
+    },
+    {
+      "catalog": "smart_meter",
+      "id": "DEV-008"
+    },
+    {
+      "catalog": "infusion_pump",
+      "id": "DEV-009"
+    },
+    {
+      "catalog": "edge_gateway",
+      "id": "DEV-010"
+    }
+  ],
+  "connections": [
+    [
+      "DEV-001",
+      "DEV-003"
+    ],
+    [
+      "DEV-002",
+      "DEV-003"
+    ],
+    [
+      "DEV-003",
+      "DEV-004"
+    ],
+    [
+      "DEV-006",
+      "DEV-010"
+    ],
+    [
+      "DEV-007",
+      "DEV-010"
+    ],
+    [
+      "DEV-008",
+      "DEV-010"
+    ],
+    [
+      "DEV-010",
+      "DEV-003"
+    ],
+    [
+      "DEV-010",
+      "DEV-009"
+    ]
+  ],
+  "agents": {
+    "DEV-002": {
+      "type": "noisy_honest"
+    },
+    "DEV-007": {
+      "type": "noisy_honest"
+    },
+    "DEV-008": {
+      "type": "compromised_valid",
+      "attack_start": 40
+    },
+    "DEV-010": {
+      "type": "noisy_honest"
+    }
+  },
+  "_note": "Devices without an agents entry are honest. Ground truth (agents) is used only by the environment and for scoring."
+}

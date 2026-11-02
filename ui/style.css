@@ -1,0 +1,33 @@
+/* ZT-IoT Sentinel — the only custom stylesheet (loaded once per page run by ui.theme.load_css). */
+.block-container{padding-top:2rem;padding-bottom:2rem;max-width:1400px}
+h1{font-size:24px!important;font-weight:600!important;margin-bottom:0!important}
+h2,h3{font-size:16px!important;font-weight:600!important;margin-top:8px!important}
+p,li,label,.stMarkdown{font-size:14px}
+[data-testid="stCaptionContainer"],.zt-sub{font-size:12px;color:#6B7280}
+.zt-sub{margin:2px 0 12px}
+.zt-status{font-size:12px;color:#6B7280;margin:4px 0 12px}
+[data-testid="stMetric"]{border:1px solid rgba(128,128,128,.25);border-radius:6px;padding:8px 10px}
+[data-testid="stMetricLabel"] p{font-size:12px;color:#6B7280}
+[data-testid="stMetricLabel"] *{overflow:visible!important;text-overflow:clip!important}
+[data-testid="stMetricValue"]{font-size:20px}
+[data-testid="stExpander"] details{border:1px solid rgba(128,128,128,.25);border-radius:6px;box-shadow:none}
+.zt-steps{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin:8px 0 16px}
+.zt-step{border:1px solid rgba(128,128,128,.3);border-radius:6px;padding:8px 10px;min-height:96px;font-size:12px;overflow-wrap:anywhere}
+.zt-step b{display:block;font-size:12px;margin-bottom:4px}
+.zt-step .n{color:#6B7280;font-size:11px}
+.zt-step .v{color:inherit;margin-bottom:4px}
+.zt-step .d{color:#6B7280;font-size:11px;line-height:1.35}
+.zt-step.k-allow{border-color:var(--zt-trusted)}.zt-step.k-step{border-color:var(--zt-suspicious)}
+.zt-step.k-block{border-color:var(--zt-isolated)}.zt-step.k-drop{border-color:var(--zt-quarantined)}
+.zt-term{display:flex;flex-direction:column-reverse;height:420px;overflow-y:auto;background:#111827;color:#D1D5DB;
+  border-radius:6px;padding:10px 12px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.zt-term .l{white-space:pre-wrap}
+.zt-term .t{color:#6B7280}
+.zt-term .calc{color:#9CA3AF;font-size:11px;padding-left:4ch}
+.zt-term b{font-weight:600}.w-allow{color:var(--zt-trusted)}.w-step{color:var(--zt-suspicious)}
+.w-block{color:var(--zt-isolated)}.w-drop{color:var(--zt-quarantined)}
+.zt-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+[data-testid="stSidebar"] .st-key-live_start button,[data-testid="stSidebar"] .st-key-live_pause button,
+[data-testid="stSidebar"] .st-key-live_step button,[data-testid="stSidebar"] .st-key-live_reset button{padding:4px 0;min-height:32px}
+[data-testid="stSidebar"] [class*="st-key-live_"] button p{font-size:12px}
+@media (max-width:1100px){.zt-steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
