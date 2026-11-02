@@ -239,8 +239,5 @@ These are **simulation results under the project's configured assumptions**, not
 **Project:** Zero-Trust Authentication and Continuous Trust Evaluation for IoT Networks Using Bayesian and Large Language Model Engines  
 **Institution:** Department of Computer Science & Engineering, Motilal Nehru National Institute of Technology Allahabad  
 **Supervisor:** Neelam Dayal, Assistant Professor  
-**Authors:** Shreyash Kumar Dube, Sparsh Singh, Siddhesh Choubey, and Shubham Daya Vadher
+**Authors:** Shreyash Kumar Dube (7985235857), Sparsh Singh, Siddhesh Choubey, and Shubham Daya Vadher
 
-## License
-
-No license has been added yet. Unless a license is included in this repository, all rights remain with the authors and reuse is not automatically permitted. Add a license only after confirming the team's preference.
