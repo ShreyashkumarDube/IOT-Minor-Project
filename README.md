@@ -45,7 +45,7 @@ Alternatively, download the repository ZIP from GitHub and extract it.
 
 **Windows PowerShell**
 ```powershell
-py -3.10 -m venv .venv
+python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
